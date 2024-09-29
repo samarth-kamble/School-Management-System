@@ -4,6 +4,7 @@ import {Noto_Sans} from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import Image from "next/image";
+import LeftSidebar from "@/components/LeftSidebar";
 
 const inter = Noto_Sans({subsets: ["latin"]});
 
@@ -25,6 +26,7 @@ export default function DashboardLayout({
                     <Image src={"/logo.png"} alt={"Logo"} height={32} width={32}/>
                     <span className="hidden lg:block font-bold">EduManage</span>
                 </Link>
+                <LeftSidebar />
             </div>
             {/*Right Sidebar*/}
             <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#F7F8FA] overflow-scroll flex flex-col">
