@@ -1,4 +1,7 @@
+import AttendanceChart from "@/components/AttendanceChart";
 import CountChart from "@/components/CountChart";
+import EventCalender from "@/components/EventCalender";
+import FinanceChart from "@/components/FinanceChart";
 import UserCard from "@/components/UserCard";
 import React from "react";
 
@@ -20,10 +23,19 @@ const AdminPage = () => {
           <div className="w-full lg:w-1/3 h-[450px]">
             <CountChart />
           </div>
+          {/* Attendance Chart */}
+          <div className="w-full lg:w-2/3 h-[450px]">
+            <AttendanceChart />
+          </div>
+        </div>
+        <div className="w-full h-[500px]">
+          <FinanceChart />
         </div>
       </div>
       {/* RIGHT  */}
-      <div className="w-full lg:w-1/3">L</div>
+      <div className="w-full lg:w-1/3 flex flex-col gap-8">
+        <EventCalender />
+      </div>
     </div>
   );
 };
