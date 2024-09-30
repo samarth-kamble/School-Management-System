@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "14.2.5",
+    "re-chart": "^1.0.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "recharts": "^2.12.7"
   },
   "devDependencies": {
     "typescript": "^5",
